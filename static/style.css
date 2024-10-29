@@ -1,4 +1,5 @@
 *{
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +24,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 8%;
-  font-family:'TEXTtutlogo';
   font-weight: 200;
   font-size: 15px;
   z-index: 5;
@@ -35,6 +35,7 @@ body {
   padding: 0px 50px 0px 50px;
 }
 .navbar nav ul li a{
+  font-weight: 500;
   padding: 15px;
   color: black;
   display: block;
@@ -59,6 +60,7 @@ nav a:hover{
   text-decoration: underline;
 }
 #myBtn {
+  font-weight: 600;
   background-color: #53c8eb; /* Голубой фон */
   border: none; /* Убираем границу */
   color: white; /* Белый текст */
@@ -94,7 +96,6 @@ nav a:hover{
   margin-left: 8px; /* Добавляет небольшой отступ между текстом и иконкой */
 }
 .myBtn{
-  font-family: 'Cruinn-header';
   font-weight: 800;
 }
 /* Стиль модального окна */
@@ -147,10 +148,7 @@ nav a:hover{
   margin-bottom: 20px; /* Отступ после параграфа */
 }
 
-.intro-text button {
-  font-family: 'Secondtext';
-  /* Стили для кнопки */
-}
+
 
 
 /* Стили для адаптивности */
@@ -174,30 +172,32 @@ nav a:hover{
   
 }
 
+.obshiy span{
+  font-size: 65px;
+}
 .white{
-  font-family: 'textintocontainer2';
+
   font-weight: bold;
   margin-top: 80px;
   display: block;
-  font-size: 65px;
+
   color: #fff7f7;
-  padding: 1px 3px 1px 3px;
   border-radius: 10px;
-  text-shadow: 2px 2px 4px #000000;
+
 } 
 .blue{
-  font-family: 'textintocontainer1';
-  font-size:50px;
-  font-weight: 100;
+
+
+  font-weight: bold;
   display: block;
   color: #53c8eb;
-  text-shadow: 2px 1px 3px #000000;
+  
 }
 .textg{
-  font-family: 'Cruinn-header';
+
   font-weight :800 ;
   color: #ffffff;
-  text-shadow: 2px 2px 4px #000000;
+
   display: flex;
 }
 .button-objects{
@@ -235,7 +235,7 @@ nav a:hover{
   color: #312f2f;
   padding: 0,2em 0,4em;
   font-size: 9vw;
-  font-family: 'TEXT2';
+
   margin-top: 575px;
   
 }
@@ -317,12 +317,12 @@ nav a:hover{
   
 }
 .oglav{
-  font-family: 'TEXT2';
+
   font-size: 25px;
   color: #ffffff;
 }
 .secondtxt{
-  font-family: 'TEXT3';
+
   font-size: 18px;
   color:#71dcff;
   text-shadow: 2px 2px 2px #3892fa;
@@ -354,12 +354,12 @@ nav a:hover{
   margin-left: 65px;
 }
 .firsttxt{
-  font-family: 'TEXT2';
+
   font-size: 24px;
   color: #ffffff;
 }
 .tut{
-  font-family: 'TEXT3';
+
   font-size: 18px;
   color: #75d9f5;
   text-shadow: 2px 2px 2px #3892fa;
@@ -415,7 +415,7 @@ nav a:hover{
   
 }
 .txt45{
-  font-family: 'TEXT2';
+
 
 }
 .lasttxt{
@@ -435,15 +435,7 @@ nav a:hover{
 .cont1gif{
   max-width: 650px;
 }
-.footerA{
-  font-weight: 800; font-family: 'Cruinn-header'
-}
-.prava{
-  font-weight: 500; font-family: 'Cruinn-header'
-}
-.adresss{
-  font-weight: 500; font-family: 'Cruinn-header'
-}
+
 .popup{
 position: fixed;
 width: 100%;
@@ -510,7 +502,7 @@ transform:perspective(600px) translate(0px, -100%) rotateX(45deg);
 .popup_title{
   font-size: 20px;
   
-  font-family: 'textintocontainer1';
+
 }
 .delovoy{
   margin-bottom: 20px;
@@ -523,7 +515,10 @@ transform:perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
 .popich_txt{
   font-size: 13px;
-  font-family: 'textintocontainer3';
+
+}
+.ButtonInContainer{
+  margin-top: 20px;
 }
 
 
