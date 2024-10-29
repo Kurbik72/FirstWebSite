@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+}
+body {
+    overflow-y: scroll; /* Включаем вертикальный скролл */
+}
+
+.navbar{
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    font-family:'TEXTtutlogo';
+    font-weight: 200;
+    font-size: 15px;
+    z-index: 5;
+}
+.navbar nav ul li{
+    position: relative;
+    float: left;
+    border-right:  1px solid rgba(0, 0, 0, 0.151);
+    padding: 0px 50px 0px 50px;
+}
+.navbar nav ul li a{
+    padding: 15px;
+    color: black;
+    display: block;
+}
+
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    background: #fff;
+    display: none;
+
+}
+nav ul li ul li{
+    width: 100%;
+    border: 1px solid rgba(0,0,0.1);
+}
+nav ul li:hover >ul{
+    display: initial;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.pojarcont{
+    min-height: 120vh;
+min-width: 120vh;
+display: flex;
+
+flex-direction: column;
+background: linear-gradient( #d1f7f8, #76aee1 );
+position: relative;
+background-size: auto, cover;
+background-repeat: no-repeat;
+background-position: center; /* Центрирование градиента и фона */
+}
+.st21{
+    width: 300px;
+    height: 300px;
+}
+.st22{
+    width: 300px;
+    height: 300px;
+}
+.st23{
+    width: 300px;
+    height: 300px;
+}
+.st24{
+    width: 300px;
+    height: 300px;
+}
+.obshee{
+    display: flex;
+    flex-direction: column;
+}
+.text11111{
+    margin-top: 30px;
+}
+.pojar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'textintocontainer1';
+    font-size: 27px;
+    color: #3788d4;
+}
+.prot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'textintocontainer1';
+    font-size: 35px;
+    color: #3788d4;
+
+}
+.esttuta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-top:300px;
+}
+.drel{
+    width: 400px;
+    
+}
+.contenttext{
+    width: 50%;
+}
+.img3kakoeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infa23{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'textintocontainer1';
+    font-size: 20px;
+    color: #3788d4;
+}
+.footerA{
+    font-weight: 800; font-family: 'Cruinn-header'
+}
+.prava{
+    font-weight: 500; font-family: 'Cruinn-header'
+}
+.adresss{
+    font-weight: 500; font-family: 'Cruinn-header'
+}
+.footerMain{
+    background: #fff;
+    background-size: 100%;
+    width: 100%;
+}
+.montaj{
+    margin: 20px 0px;
+}
+.infa2241{
+    font-family: 'textintocontainer2';
+    font-weight: 700;
+    color: #fff;
+}
+.infa2242{
+    margin: 25px 0px;
+    font-family: 'textintocontainer2';
+    font-weight: 700;
+    color: #fff;
+}
+.infa2243{
+    margin: 25px 0px;
+    font-family: 'textintocontainer2';
+    font-weight: 700;
+    color: #fff;
+}

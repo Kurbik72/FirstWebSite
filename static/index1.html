@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<style>
+    @font-face {
+    font-family: 'MagistralC-Bold';
+    src: url(MagistralC\ Bold.otf);
+    
+    
+    
+    }
+
+    @font-face {
+    font-family: 'Cruinn';
+    src: url(fonts/Cruinn.ttf);
+    }
+    @font-face {
+    font-family: 'headertext';
+    src: url(Geologica-Light.ttf);
+    
+    
+    
+    }
+    @font-face {
+    font-family: 'Cruinn-header';
+    src: url(fonts/Cruinn\ Medium.ttf);
+    }
+    @font-face {
+    font-family: 'textintocontainer1';
+    src: url(fonts/Unbounded-Bold.ttf);
+    
+    
+    
+    }
+    @font-face {
+    font-family: 'textintocontainer2';
+    src: url(fonts/Unbounded-Light.ttf);
+    
+    
+    
+    }
+    @font-face {
+        font-family: 'TEXTtut';
+        src: url(../static/fonts/Baron\ Neue\ Bold.ttf);
+        
+        
+        
+        }
+        @font-face {
+        font-family: 'TEXTtutlogo';
+        src: url(../static/fonts/Baron\ Neue\ Italic.ttf);
+        
+        
+        
+        }
+    .header{
+        font-family: 'MagistralC-Bold';
+        padding: 0 8%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        border-bottom: solid 2px rgba(1, 1, 1, 0.137);
+    }
+
+    .headerMainSection{
+        width: 80%;
+        max-width: 1400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 140px;
+    }
+    .columnCont{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .rowCont{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .footerBack{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:#ffffff00;
+    }
+
+    .footerMain{
+        width: 100%;
+        max-width: 14000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+        margin-top: 50px;
+        color:  rgba(1, 1, 1, 0.836);
+        padding-bottom: 50px;
+    }
+
+    .footerCont{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 25%;
+    }
+
+
+    .footerA{
+        margin-top: 20px;
+        font-size: 125%;
+        text-decoration: none;
+        color:  rgba(1, 1, 1, 0.836);
+        text-align: center;
+    }
+
+    .footerA:hover{
+        text-decoration: underline;
+    }
+    </style>
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="headerMainSection">
+        <div class="columnCont" style="align-items: center;">
+            <a href="../index.html"><img src="img/logonew.jpg" style=" height: 75px; "></a>
+            <span style="font-family: 'TEXTtut'; font-weight: 700; font-size: 175%; margin-bottom: 10px; color: #53c8eb;" >СК Горизонт</span>
+        </div>
+        <div class="columnCont" style="align-items: left; ">
+            <span class="rowCont" style="align-items: center; gap: 10px; justify-content: flex-start;font-family: 'Cruinn-header';" ><script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/lzgqzxrq.json"
+                trigger=""
+                colors="primary:#3a3347,secondary:#ebe6ef,tertiary:#4bb3fd,quaternary:#000000"
+                style="width:35px;height:35px;">
+            </lord-icon>пн-пт с 9:00 до 18:00</span>
+            <div class="rowCont" style="justify-content: flex-start;gap: 10px;">
+            <label for="adress"><script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/iikoxwld.json"
+                    trigger=""
+                    style="width:35px;height:45px">
+                </lord-icon></label>
+            <span id="adress" style="display: flex; align-items: center;font-family: 'Cruinn-header';" >Угрешская ул., 2, Москва, 115088</span>
+        </div>
+        </div>
+        <div class="rowCont" style="align-items: center; gap: 20px;">
+            <svg style="height: 30px;" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m512 256c0 68.378906-26.628906 132.671875-74.980469 181.019531-48.328125 48.332031-112.578125 74.960938-180.929687 74.980469h-.089844c-68.378906 0-132.671875-26.628906-181.019531-74.980469-48.351563-48.347656-74.980469-112.640625-74.980469-181.019531s26.628906-132.671875 74.980469-181.019531c48.347656-48.351563 112.640625-74.980469 181.019531-74.980469h.089844c68.351562.0195312 132.601562 26.648438 180.929687 74.980469 48.351563 48.347656 74.980469 112.640625 74.980469 181.019531zm0 0" fill="#0cf" style="fill: rgb(0, 183, 236);"></path><path d="m512 256c0 68.378906-26.628906 132.671875-74.980469 181.019531-48.328125 48.332031-112.578125 74.960938-180.929687 74.980469v-512c68.351562.0195312 132.601562 26.648438 180.929687 74.980469 48.351563 48.347656 74.980469 112.640625 74.980469 181.019531zm0 0" fill="#00a8e8" style="fill: rgb(0, 183, 255);"></path><path d="m349.410156 380.808594c-18.070312 19.511718-54.621094 13.480468-93.320312-7.75-56.988282-31.257813-118.621094-95.480469-132.691406-159.636719-8.308594-37.851563 4.652343-44.871094 26.730468-67.210937 17.632813-17.839844 22.460938-23.921876 34.800782-23.921876 10.082031 0 18.332031 5.832032 23.429687 14.621094 29.8125 56.621094 43.839844 66.449219 13.53125 94.011719 5.230469 12.277344 19.578125 28.957031 34.199219 42.066406 9.289062 8.339844 18.691406 15.25 25.898437 18.671875 2.0625-2.109375 5.261719-5.390625 10.082031-10.300781 20.417969-19.4375 42.339844-1.28125 54.890626 6.152344 28.617187 16.929687 41.140624 20.929687 43.828124 37.25 2.132813 16.378906-4.898437 19.816406-41.378906 56.046875zm0 0" fill="#fff"></path><path d="m349.410156 380.808594c-18.070312 19.511718-54.621094 13.480468-93.320312-7.75v-100.070313c9.289062 8.339844 18.691406 15.25 25.898437 18.671875 2.0625-2.109375 5.261719-5.390625 10.082031-10.300781 20.417969-19.4375 42.339844-1.28125 54.890626 6.152344 28.617187 16.929687 41.140624 20.929687 43.828124 37.25 2.132813 16.378906-4.898437 19.816406-41.378906 56.046875zm0 0" fill="#d7f3ff" style="fill: rgb(252, 252, 252);"></path></svg>
+            <div class="columnCont" style="gap: 10px;font-family: 'Cruinn-header';">
+            <span>+7 (945) 123-12-34</span>
+            <span>+7 (945) 123-12-34</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center">
+        <div  class="navbar">
+        <nav class="ll">
+            <ul>
+            <li><a href="../straniza2/index1.html">Наш опыт</a></li>
+            <li><a href="../o kompanii/index2.html">О компании</a></li>
+            <li><a href="#">Профиль деятельности <svg class="strlk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg> </a>
+            <ul>
+                <li><a href="../profil deyat/index3.html">Системы противопожарной безопастности</a></li>
+                <li><a href="#">Слаботочные системы</a></li>
+                <li><a href="#">Системы винтеляции и кондиционирования</a></li>
+            </ul>
+            </li>
+            <li style="border: none;"><a href="#">Вакансии</a></li>
+            
+            </ul>
+        </nav>
+        </div>
+    </div>
+<div class="container">
+    <div class="textcontainer">
+        
+    <div class="textincont wow animate__animated animate__fadeInUp">
+        <p class="oglav">Какой у нас опыт? </p>
+    </div>
+    <div class="fon">
+        <img  class="izbr wow animate__animated animate__fadeInRight" src="img/is2_680.jpg" alt="">
+    </div>
+    
+</div>
+<div class="arrow">
+    <a class="down" href="#between-container">
+    <lord-icon
+src="https://cdn.lordicon.com/rqptwppx.json"
+trigger="hover"
+stroke="bold"
+colors="primary:#1663c7,secondary:#ffffff"
+style="width:50px;height:50px">
+</lord-icon>
+    </a>
+</div>
+</div>
+<div id="between-container"  class="nextcont">
+    
+    <div class="infocontainer">
+        <p class="nazv">СК горизонт</p>
+    </div>
+    <div class="allcontainers">
+    <a class="txee" href="#"><div class="cont1">
+        <div class="textone">
+        <p  class="oglavl1">Сотни объектов</p>
+        <div class="zagolovok">
+        <p class="zag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ut qui quia iure ipsa vel, eum dolores, ea doloremque cupiditate fugiat. Ratione rem aliquid sit ea saepe, suscipit rerum incidunt.</p>
+    </div>
+    </div>
+    </div>
+</a>
+    
+    <div class="cont2">
+        <div class="texttwo">
+        <p class="lav21">Довольные клиенты</p>
+        <p class="lovok">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quia fugiat. Aliquam architecto totam saepe fugiat delectus amet corrupti nobis dicta cupiditate unde, recusandae autem quod explicabo animi repellendus iure.</p>
+    </div>
+</div>
+
+    <div class="cont3">
+        <div class="fortxt">
+        <p class="av3">Широкий спектр услуг</p>
+        <p class="loremny">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet quam, quod perferendis deserunt ducimus libero, est dicta ullam consequuntur laborum distinctio doloribus magni optio odio nostrum fugiat quidem? Id, reiciendis.</p>
+    </div>
+
+</div>
+</div>
+<div class="footerBack" >
+    <div class="footerMain" >
+    <div class="columnCont"style="align-items: center;" >
+        <img src="img/logonew.jpg" style=" height: 75px; ">
+    <span style="font-family: 'Cruinn'; font-weight: 700; font-size: 175%; margin-top: 10px; color: #53c8eb;" >СК Горизонт</span>
+    <p class="prava">© Все права защищены 2024</p>
+    </div>
+    <div class="columnCont">
+        <div class="rowCont" style="display: flex; align-items: center;">
+            <lord-icon
+            src="https://cdn.lordicon.com/iikoxwld.json"
+            trigger=""
+            style="width:35px;height:45px">
+        </lord-icon>
+        <span id="adress" style="display: flex; align-items: center;font-family: 'Cruinn-header'" >Угрешская ул., 2, Москва, 115088</span></div>
+    </div>
+    <div class="columnCont">
+        <span style="font-size: 120%; font-weight: 500; font-family: 'Cruinn-header';" >Контакты:</span>
+        <a href="#"  class="footerA">+7 (945) 123-12-34</a>
+        <a href="#" class="footerA">asdasd@gmail.com</a>
+        </div>
+
+    </div>
+    
+</div>
+
+
+
+
+
+<script src="app1.js"></script>
+</body>
+</html>

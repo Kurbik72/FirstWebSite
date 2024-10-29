@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+}
+body {
+    overflow-y: scroll; /* Включаем вертикальный скролл */
+}
+
+.navbar{
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    font-family:'TEXTtutlogo';
+    font-weight: 200;
+    font-size: 15px;
+    z-index: 5;
+}
+.navbar nav ul li{
+    position: relative;
+    float: left;
+    border-right:  1px solid rgba(0, 0, 0, 0.151);
+    padding: 0px 50px 0px 50px;
+}
+.navbar nav ul li a{
+    padding: 15px;
+    color: black;
+    display: block;
+}
+
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    background: #fff;
+    display: none;
+
+}
+nav ul li ul li{
+    width: 100%;
+    border: 1px solid rgba(0,0,0.1);
+}
+nav ul li:hover >ul{
+    display: initial;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.strlk{
+    width: 15px;
+    
+}
+.vintil{
+    min-height: 200vh;
+background: linear-gradient( #d1f7f8, #76aee1 );
+position: relative;
+background-size: auto, cover;
+background-repeat: no-repeat;
+background-position: center; /* Центрирование градиента и фона */
+
+height: 600px;
+}
+.truba{
+    width: 75%;
+    height: 100%;
+}
+.withpict{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.textest2{
+    font-family: 'textintocontainer1';
+    font-size: 40px;
+    color: #ffffff;
+    border: 2px #d3d6d6 solid;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 30px;
+}
+
+.mogoimg{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+.vsecartinki{
+    
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+
+}
+.vsetexxta{
+    display: flex;
+    
+    margin: 20px 0px ;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'textintocontainer2';
+}
+.posldniy{
+    color: #ffffff;
+    margin:150px 20px;
+    font-family:'textintocontainer2' ;
+    font-weight: 800;
+    
+}
+.vtoroy{
+    display: flex;
+    flex-direction: column;
+}
+.footerBack{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffffff00;
+}
+
+.footerMain{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 50px;
+    color:  rgba(1, 1, 1, 0.836);
+    padding-bottom: 50px;
+}
+
+.footerCont{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+}
+
+
+.footerA{
+    margin-top: 20px;
+    font-size: 125%;
+    text-decoration: none;
+    color:  rgba(1, 1, 1, 0.836);
+    text-align: center;
+}
+
+.footerA:hover{
+    text-decoration: underline;
+}
+.footerMain{
+    background-color: #fff;
+}

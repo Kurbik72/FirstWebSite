@@ -1,0 +1,541 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html,body{
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+}
+body {
+  overflow-y: scroll; /* Включаем вертикальный скролл */
+}
+
+.navbar{
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  font-family:'textintocontainer3';
+  font-weight: 600;
+  font-size: 17px;
+  z-index: 5;
+}
+.navbar nav ul li{
+  position: relative;
+  float: left;
+  border-right:  1px solid rgba(0, 0, 0, 0.151);
+  padding: 0px 50px 0px 50px;
+}
+.navbar nav ul li a{
+  padding: 15px;
+  color: black;
+  display: block;
+}
+
+nav ul li ul{
+  position: absolute;
+  left: 0;
+  width: 300px;
+  background: #fff;
+  display: none;
+
+}
+nav ul li ul li{
+  width: 100%;
+  border: 1px solid rgba(0,0,0.1);
+}
+nav ul li:hover >ul{
+  display: initial;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+#myBtn {
+  background-color: #53c8eb; /* Голубой фон */
+  border: none; /* Убираем границу */
+  color: white; /* Белый текст */
+  padding: 12px 24px; /* Внутренние отступы */
+  font-size: 16px; /* Размер шрифта */
+  cursor: pointer; /* Указываем, что это кнопка */
+  border-radius: 5px; /* Скругляем углы */
+  transition: background-color 0.3s, transform 0.1s; /* Плавный переход для фона и трансформации */
+  outline: none; /* Убираем контур при фокусе */
+  box-shadow: 0 4px #3fa0bd; /* Тень снизу */
+}
+
+#myBtn:hover {
+  background-color: #29778f; /* Светло-голубой фон при наведении */
+  box-shadow: 0 6px #003d66; /* Тень становится глубже */
+}
+
+#myBtn:active {
+  transform: translateY(2px); /* Кнопка немного опускается при нажатии */
+  box-shadow: 0 2px #53c8eb; /* Тень уменьшается при нажатии */
+}
+#myBtn {
+  /* Ваши стили кнопки */
+  display: inline-flex; /* Используйте flex, чтобы лучше контролировать расположение текста и иконки */
+  align-items: center; /* Выравнивание иконки и текста по вертикали */
+  justify-content: center;
+  margin-left: 100px; /* Горизонтальное выравнивание */
+  /* ... другие стили кнопки ... */
+  
+}
+
+#myBtn lord-icon {
+  margin-left: 8px; /* Добавляет небольшой отступ между текстом и иконкой */
+}
+.myBtn{
+  font-family: 'Cruinn-header';
+  font-weight: 800;
+}
+/* Стиль модального окна */
+/* Стили для секции под шапкой */
+.intro-section {
+  min-height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient( #d1f7f8, #76aee1 );
+  position: relative;
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Центрирование градиента и фона */
+  padding: 40px 60px;
+  height: 600px;
+  
+}
+
+
+.intro-text {
+  display: flex;
+  flex-direction: row;
+  flex: 1; /* Занимает все доступное пространство */
+  max-width: 100%; /* Максимальная ширина блока с текстом */
+}
+
+.intro-media {
+  flex: 1; /* Занимает все доступное пространство */
+  max-width: 50%; /* Максимальная ширина блока для видео */
+}
+
+.intro-text h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  height: 250px;
+  gap: 15px;
+  max-width: 600px;
+  min-width: 530px;
+  font-size: 2.5rem; /* Размер шрифта для заголовка */
+  color: #000; /* Цвет текста */
+  margin-bottom: 20px; /* Отступ после заголовка */
+}
+
+.intro-text p {
+  font-size: 1rem; /* Размер шрифта для параграфа */
+  margin-bottom: 20px; /* Отступ после параграфа */
+}
+
+.intro-text button {
+  font-family: 'Secondtext';
+  /* Стили для кнопки */
+}
+
+
+/* Стили для адаптивности */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Стекаем элементы в колонну на мобильных устройствах */
+  }
+  .intro-text,
+  .intro-media {
+    max-width: 100%; /* Блоки занимают всю ширину на мобильных */
+  }
+}
+.intro-text{
+  display: flex;
+  
+}
+.big{ /* Укажите размер шрифта подходящий для вашего дизайна */
+  font-weight: bold; /* Укажите жирность шрифта */
+  color: #FFF; /* Цвет шрифта */
+  margin-bottom: 1rem; /* Отступ снизу */
+  
+}
+
+.white{
+  font-family: 'textintocontainer2';
+  font-weight: bold;
+  margin-top: 80px;
+  display: block;
+  font-size: 65px;
+  color: #fff7f7;
+  padding: 1px 3px 1px 3px;
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px #000000;
+} 
+.blue{
+  font-family: 'textintocontainer1';
+  font-size:50px;
+  font-weight: 100;
+  display: block;
+  color: #53c8eb;
+  text-shadow: 2px 1px 3px #000000;
+}
+.textg{
+  font-family: 'Cruinn-header';
+  font-weight :800 ;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  display: flex;
+}
+.button-objects{
+  margin-top: 190px;
+}
+.back-video{
+  right: 0;
+
+  
+  
+}
+
+
+
+.overlay{
+  position: fixed; 
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+}
+
+.bar{
+  width: 120vw;
+  height: 105vh;
+  background:#ffffff;
+}
+.counter{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  z-index: 10;
+  color: #312f2f;
+  padding: 0,2em 0,4em;
+  font-size: 9vw;
+  font-family: 'TEXT2';
+  margin-top: 575px;
+  
+}
+.video{
+  position: absolute;
+  z-index: 4;
+  max-width: 600px;
+  margin-top: 100px;
+  border: none;
+  
+}
+.videobuilders{
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 100%;
+}
+
+.video1{
+  display: flex;
+  position: absolute;
+  z-index: 4;
+  max-width: 700px;
+  margin-top: -42px;  
+  margin-right: 450px;
+  border: none;
+}
+.arrow{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  margin-top: 500px;
+}
+.gfg{
+  position: absolute;
+  margin-bottom: 250px;
+  
+  
+  
+}
+.secondcontainer{
+  background: linear-gradient( #76aee1 , #ffffff);
+  display: flex;
+  justify-content: center;
+  
+  padding: 20px; 
+  
+
+}
+.building{
+  width: 100%;
+  height: auto; /* Подгоняем высоту изображения автоматически */
+  margin-left: 15px;
+  
+}
+
+
+.text1{
+  padding: 20px;
+}
+.between-container{
+  background: linear-gradient(90deg, #3b96a9, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 12px;
+  width: 75%;
+  height: 50%;
+  
+  
+}
+.oglav{
+  font-family: 'TEXT2';
+  font-size: 25px;
+  color: #ffffff;
+}
+.secondtxt{
+  font-family: 'TEXT3';
+  font-size: 18px;
+  color:#71dcff;
+  text-shadow: 2px 2px 2px #3892fa;
+  
+}
+.infocont{
+  background: linear-gradient( #ffffff , #c1e4f0);
+  display: flex;
+  justify-content: center;
+  padding: 20px; 
+
+}
+.nextcont{
+  background: linear-gradient(90deg, #6aacb9,#2470bf);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  width: 80%;
+  height: 40%;
+
+}
+.textosec{
+  padding: 20px;
+}
+.crane-hook{
+  width: 75%;
+  height: auto;
+  margin-left: 65px;
+}
+.firsttxt{
+  font-family: 'TEXT2';
+  font-size: 24px;
+  color: #ffffff;
+}
+.tut{
+  font-family: 'TEXT3';
+  font-size: 18px;
+  color: #75d9f5;
+  text-shadow: 2px 2px 2px #3892fa;
+}
+.textosec{
+  display: flex;
+  flex-direction: row;
+}
+.photocont{
+  width: 35%;
+}
+.text1{
+  display: flex;
+  flex-direction: row;
+}
+
+.txt44{
+  width: 65% ;
+}
+.info{
+  display: flex;
+  align-content: space-between;
+}
+.lastcont{
+  background: linear-gradient( #c1e4f0 , #76aee1);
+  display: flex;
+  justify-content: center;
+  padding: 20px; 
+  border-bottom: solid 3px rgba(0, 0, 0, 0.664);
+}
+.containter3{
+  background: linear-gradient(90deg, #415c8f,#81cce0,#3395c5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  width: 95%;
+  height: 40%;
+
+}
+.textinf{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+
+}
+.txt45{
+  width: 65% ;
+  
+}
+.photocont1{
+  width: 35%;
+  
+}
+.txt45{
+  font-family: 'TEXT2';
+
+}
+.lasttxt{
+  font-size: 24px;
+  color: #ffffff;
+}
+.txt12{
+  color: #75d9f5;
+  text-shadow: 2px 2px 2px #3892fa;
+  font-size: 18px;
+
+}
+.gif1{
+  width: 50%;
+  
+}
+.cont1gif{
+  max-width: 650px;
+}
+.footerA{
+  font-weight: 800; font-family: 'Cruinn-header'
+}
+.prava{
+  font-weight: 500; font-family: 'Cruinn-header'
+}
+.adresss{
+  font-weight: 500; font-family: 'Cruinn-header'
+}
+.popup{
+position: fixed;
+width: 100%;
+height: 100%;
+background-color:   rgba(0, 0, 0, 0.8);
+top: 0;
+left: 0;
+z-index: 5;
+opacity: 0; 
+visibility: hidden;
+overflow-y: auto;
+overflow-x: hidden;
+transition: all 0.8s ease 0s;
+}
+.popup:target{
+  visibility: visible;
+  opacity: 1;
+}
+.popup:target .popup_content{
+  transform:perspective(600px) translate(0px, 0px) rotateX(0deg);
+  opacity: 1;
+}
+.popup_body{
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.popup_content{
+background-color: #fff;
+border-radius: 10px;
+color: #000;
+max-width: 800px;
+padding:30px;
+position: relative;
+transition: all 0.8s ease 0s;
+opacity: 0;
+transform:perspective(600px) translate(0px, -100%) rotateX(45deg);
+
+}
+
+.popup_text{
+
+}
+.popup_close{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  
+
+  
+}
+.popup_area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:0;
+}
+.crest{
+  width: 35px;
+}
+.popup_title{
+  font-size: 20px;
+  
+  font-family: 'textintocontainer1';
+}
+.delovoy{
+  margin-bottom: 20px;
+}
+.obshiytext2{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+
+}
+.popich_txt{
+  font-size: 13px;
+  font-family: 'textintocontainer3';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

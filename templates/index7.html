@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style7.css">
+    <style>
+        @font-face {
+        font-family: 'MagistralC-Bold';
+        src: url(../static/MagistralC\ Bold.otf);
+        
+        
+        
+        }
+    
+        @font-face {
+        font-family: 'Cruinn';
+        src: url(../static/fonts/Cruinn.ttf);
+        }
+        @font-face {
+        font-family: 'headertext';
+        src: url(../static/Geologica-Light.ttf);
+        
+        
+        
+        }
+        @font-face {
+        font-family: 'Cruinn-header';
+        src: url(../static/fonts/Cruinn\ Medium.ttf);
+        }
+    
+        @font-face {
+        font-family: 'Secondtext';
+        src: url(../static/PitagonSansMono-Bold.otf);
+        }
+        .text_effect {
+        font-family: 'MagistralC-Bold';
+        color: rgb(0, 0, 0);
+        font-size: 42px;
+        background-color: rgb(255, 255, 255);
+        text-shadow: rgb(255, 255, 255) 4px 4px 2px;
+        
+        }
+        @font-face {
+        font-family: 'TEXT2';
+        src: url(../static/fonts/DelaGothicOne-Regular.ttf);
+        
+        
+        
+        }
+        @font-face {
+        font-family: 'TEXT3';
+        src: url(../static/fonts/DelaGothicOne-Regular.ttf);
+        
+        
+        
+        }
+        @font-face {
+        font-family: 'textintocontainer1';
+        src: url(../static/fonts/Unbounded-Bold.ttf);
+        
+        
+        
+        }
+        @font-face {
+        font-family: 'textintocontainer2';
+        src: url(../static/fonts/Unbounded-Light.ttf);
+        
+        
+        
+        }
+        @font-face {
+            font-family: 'TEXTtut';
+            src: url(../static/fonts/Baron\ Neue\ Bold.ttf);
+            
+            
+            
+            }
+            @font-face {
+            font-family: 'TEXTtutlogo';
+            src: url(../static/fonts/Baron\ Neue\ Italic.ttf);
+            
+            
+            
+            }
+        .header{
+        font-family: 'MagistralC-Bold';
+        padding: 0 8%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        border-bottom: solid 2px rgba(1, 1, 1, 0.137);
+        }
+    
+        .headerMainSection{
+        width: 80%;
+        max-width: 1400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 140px;
+        }
+        .columnCont{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        }
+    
+        .rowCont{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        }
+    
+        .footerBack{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:#ffffff00;
+        }
+    
+        .footerMain{
+        width: 100%;
+        max-width: 14000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+        margin-top: 50px;
+        color:  rgba(1, 1, 1, 0.836);
+        padding-bottom: 50px;
+        }
+    
+        .footerCont{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 25%;
+        }
+    
+    
+        .footerA{
+        margin-top: 20px;
+        font-size: 125%;
+        text-decoration: none;
+        color:  rgba(1, 1, 1, 0.836);
+        text-align: center;
+        }
+    
+        .footerA:hover{
+        text-decoration: underline;
+        }
+        .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        }
+    
+        .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        }
+    
+        .swiper-slide img {
+        display: block;
+        width: 100%;
+        }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <div class="headerMainSection">
+        <div class="columnCont" style="align-items: center;">
+            <a href="..//"><img src="../static/img/logonew.jpg" style=" height: 75px; "></a>
+            <span style="font-family: 'TEXTtut'; font-weight: 700; font-size: 175%; margin-bottom: 10px; color: #53c8eb;" >СК Горизонт</span>
+        </div>
+        <div class="columnCont" style="align-items: left; ">
+            <span class="rowCont" style="align-items: center; gap: 10px; justify-content: flex-start;font-family: 'Cruinn-header';" ><script src="https://cdn.lordicon.com/lordicon.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/lzgqzxrq.json"
+                trigger=""
+                colors="primary:#3a3347,secondary:#ebe6ef,tertiary:#4bb3fd,quaternary:#000000"
+                style="width:35px;height:35px;">
+            </lord-icon>пн-пт с 9:00 до 18:00</span>
+            <div class="rowCont" style="justify-content: flex-start;gap: 10px;">
+            <label for="adress"><script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/iikoxwld.json"
+                    trigger=""
+                    style="width:35px;height:45px">
+                </lord-icon></label>
+            <span id="adress" style="display: flex; align-items: center;font-family: 'Cruinn-header';" >Угрешская ул., 2, Москва, 115088</span>
+        </div>
+        </div>
+        <div class="rowCont" style="align-items: center; gap: 20px;">
+            <svg style="height: 30px;" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m512 256c0 68.378906-26.628906 132.671875-74.980469 181.019531-48.328125 48.332031-112.578125 74.960938-180.929687 74.980469h-.089844c-68.378906 0-132.671875-26.628906-181.019531-74.980469-48.351563-48.347656-74.980469-112.640625-74.980469-181.019531s26.628906-132.671875 74.980469-181.019531c48.347656-48.351563 112.640625-74.980469 181.019531-74.980469h.089844c68.351562.0195312 132.601562 26.648438 180.929687 74.980469 48.351563 48.347656 74.980469 112.640625 74.980469 181.019531zm0 0" fill="#0cf" style="fill: rgb(0, 183, 236);"></path><path d="m512 256c0 68.378906-26.628906 132.671875-74.980469 181.019531-48.328125 48.332031-112.578125 74.960938-180.929687 74.980469v-512c68.351562.0195312 132.601562 26.648438 180.929687 74.980469 48.351563 48.347656 74.980469 112.640625 74.980469 181.019531zm0 0" fill="#00a8e8" style="fill: rgb(0, 183, 255);"></path><path d="m349.410156 380.808594c-18.070312 19.511718-54.621094 13.480468-93.320312-7.75-56.988282-31.257813-118.621094-95.480469-132.691406-159.636719-8.308594-37.851563 4.652343-44.871094 26.730468-67.210937 17.632813-17.839844 22.460938-23.921876 34.800782-23.921876 10.082031 0 18.332031 5.832032 23.429687 14.621094 29.8125 56.621094 43.839844 66.449219 13.53125 94.011719 5.230469 12.277344 19.578125 28.957031 34.199219 42.066406 9.289062 8.339844 18.691406 15.25 25.898437 18.671875 2.0625-2.109375 5.261719-5.390625 10.082031-10.300781 20.417969-19.4375 42.339844-1.28125 54.890626 6.152344 28.617187 16.929687 41.140624 20.929687 43.828124 37.25 2.132813 16.378906-4.898437 19.816406-41.378906 56.046875zm0 0" fill="#fff"></path><path d="m349.410156 380.808594c-18.070312 19.511718-54.621094 13.480468-93.320312-7.75v-100.070313c9.289062 8.339844 18.691406 15.25 25.898437 18.671875 2.0625-2.109375 5.261719-5.390625 10.082031-10.300781 20.417969-19.4375 42.339844-1.28125 54.890626 6.152344 28.617187 16.929687 41.140624 20.929687 43.828124 37.25 2.132813 16.378906-4.898437 19.816406-41.378906 56.046875zm0 0" fill="#d7f3ff" style="fill: rgb(252, 252, 252);"></path></svg>
+            <div class="columnCont" style="gap: 10px;font-family: 'Cruinn-header';">
+            <span>+7 (945) 123-12-34</span>
+            <span>+7 (945) 123-12-34</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center">
+        <div  class="navbar">
+        <nav class="ll">
+            <ul>
+            <li><a href="../expirience/">Наш опыт</a></li>
+            <li><a href="../about/">О компании</a></li>
+            <li><a href="#">Профиль деятельности <svg class="strlk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg> </a>
+            <ul>
+                <li><a href="../systems/">Системы противопожарной безопастности</a></li>
+                <li><a href="../tok/">Слаботочные системы</a></li>
+                <li><a href="../vint/">Системы винтеляции и кондиционирования</a></li>
+            </ul>
+            </li>
+            <li style="border: none;"><a href="../vakasnii/">Вакансии</a></li>
+            
+            </ul>
+        </nav>
+        </div>
+    </div>
+    <div class="vintil">
+        <div class="withpict">
+            <div class="textest2">
+                <p class="texttest2">Системы винтиляции <br>и кондиционивания</p>
+            </div>
+            <div class="imgska">
+            <img class="mogoimg" src="../static/img/cond.jpg" alt="">
+        </div>
+    </div>
+    <div class="vtoroy">
+    <div class="vsecartinki">
+        
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgb(9, 108, 246);transform: ;msFilter:;"><path d="M7 17a5.007 5.007 0 0 0 4.898-4H14v2h2v-2h2v3h2v-3h1v-2h-9.102A5.007 5.007 0 0 0 7 7c-2.757 0-5 2.243-5 5s2.243 5 5 5zm0-8c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgb(9, 108, 246);transform: ;msFilter:;"><path d="M4.5 8.552c0 1.995 1.505 3.5 3.5 3.5s3.5-1.505 3.5-3.5-1.505-3.5-3.5-3.5-3.5 1.505-3.5 3.5zM19 8h-2v3h-3v2h3v3h2v-3h3v-2h-3zM4 19h10v-1c0-2.757-2.243-5-5-5H7c-2.757 0-5 2.243-5 5v1h2z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgb(9, 108, 246);;transform: ;msFilter:;"><path d="M21 15a9.11 9.11 0 0 0-.18-1.81 8.53 8.53 0 0 0-.53-1.69 8.08 8.08 0 0 0-.83-1.5 8.73 8.73 0 0 0-1.1-1.33A8.27 8.27 0 0 0 17 7.54a8.08 8.08 0 0 0-1.53-.83L15 6.52V5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1.52l-.5.19a8.08 8.08 0 0 0-1.5.83 8.27 8.27 0 0 0-1.33 1.1A8.27 8.27 0 0 0 4.54 10a8.08 8.08 0 0 0-.83 1.53 9 9 0 0 0-.53 1.69A9.11 9.11 0 0 0 3 15v3H2v2h20v-2h-1zM5 15a7.33 7.33 0 0 1 .14-1.41 6.64 6.64 0 0 1 .41-1.31 7.15 7.15 0 0 1 .64-1.19 7.15 7.15 0 0 1 1.9-1.9A7.33 7.33 0 0 1 9 8.68V15h2V6h2v9h2V8.68a8.13 8.13 0 0 1 .91.51 7.09 7.09 0 0 1 1 .86 6.44 6.44 0 0 1 .85 1 6 6 0 0 1 .65 1.19 7.13 7.13 0 0 1 .41 1.31A7.33 7.33 0 0 1 19 15v3H5z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" style="fill: rgb(9, 108, 246);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M14.829 14.828a4.055 4.055 0 0 1-1.272.858 4.002 4.002 0 0 1-4.875-1.45l-1.658 1.119a6.063 6.063 0 0 0 1.621 1.62 5.963 5.963 0 0 0 2.148.903 6.042 6.042 0 0 0 2.415 0 5.972 5.972 0 0 0 2.148-.903c.313-.212.612-.458.886-.731.272-.271.52-.571.734-.889l-1.658-1.119a4.017 4.017 0 0 1-.489.592z"></path><circle cx="8.5" cy="10.5" r="1.5"></circle><circle cx="15.493" cy="10.493" r="1.493"></circle></svg>
+        
+    </div>
+    <div class="vsetexxta">
+    <p class="key">Выполнение объектов <br>"под ключ"</p>
+    <p class="plus">Только опытные <br>специалисты</p>
+    <p class="kaska">Сотни инженерных <br>проектов компании</p>
+    <p class="smile">Индивидуальный подход  к <br>каждому клиенту</p>
+    </div>
+</div>
+<p class="posldniy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia iste repellendus reiciendis eum commodi possimus tempora rem, impedit aperiam vero. Perferendis voluptate odit a, quas maxime illum odio quisquam maiores, temporibus accusantium neque quasi est libero dignissimos velit nobis id deserunt! Pariatur velit ea perspiciatis possimus quae dolor ut sed corrupti nemo tenetur quas, doloribus distinctio blanditiis repudiandae deleniti eveniet voluptates debitis sunt incidunt officiis aut numquam! Deleniti, ducimus perspiciatis! Quod itaque, perferendis hic libero natus porro facilis rem harum sapiente sint sit ea exercitationem est culpa? Ipsam distinctio blanditiis sunt earum quo dolorum et perferendis deleniti aperiam nulla sit reiciendis asperiores sapiente accusamus porro repellat sequi aut eum natus, ea eveniet. Incidunt saepe quos facilis error distinctio, praesentium commodi reiciendis voluptates illum possimus rem itaque maiores consequatur eos doloribus assumenda at quasi. Perspiciatis qui, dicta iure porro velit reprehenderit fugiat eveniet, itaque alias autem officia culpa! Ipsa, fugit dolorum?</p>
+</div>
+<div class="footerBack" >
+    <div class="footerMain" >
+    <div class="columnCont"style="align-items: center;" >
+        <img src="../static/img/logonew.jpg" style=" height: 75px; ">
+    <span style="font-family: 'Cruinn'; font-weight: 700; font-size: 175%; margin-top: 10px; color: #53c8eb;" >СК Горизонт</span>
+    <p class="prava">© Все права защищены 2024</p>
+    </div>
+    <div class="columnCont">
+        <div class="rowCont" style="display: flex; align-items: center;">
+            <lord-icon
+            src="https://cdn.lordicon.com/iikoxwld.json"
+            trigger=""
+            style="width:35px;height:45px">
+        </lord-icon>
+        <span id="adress" style="display: flex; align-items: center;font-family: 'Cruinn-header'" >Угрешская ул., 2, Москва, 115088</span></div>
+    </div>
+    <div class="columnCont">
+        <span style="font-size: 120%; font-weight: 500; font-family: 'Cruinn-header';" >Контакты:</span>
+        <a href="#"  class="footerA">+7 (945) 123-12-34</a>
+        <a href="#" class="footerA">asdasd@gmail.com</a>
+        </div>
+
+    </div>
+    
+
+</body>
+</html>
